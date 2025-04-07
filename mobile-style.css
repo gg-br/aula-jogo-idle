@@ -1,0 +1,25 @@
+@media screen and (max-width: 1170px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .imagem1 {
+        width: 400px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    .imagem2 {
+        width: 400px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    .display-none{
+        display: none;
+}
+}
