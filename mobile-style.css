@@ -23,6 +23,16 @@
     .display-none {
         display: none;
     }
+
+    .aba-direita{
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 76.8%;
+        top: 50%;
+    }
 }
 
 
