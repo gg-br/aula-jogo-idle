@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
 </head>
-
 <body>
-
     <div class="game-fundo">
-
         <span class="custo1" id="custo1">0</span>
         <span class="custo2" id="custo2">0</span>
-
         <span class="cristal" id="cristal">0</span>
-
         <button class="minerar" onclick="mudarCSS()">Minerar</button>
-
         <button class="comprar1" onclick="comprar1()">cristal +1</button>
-
-        <button class="comprar2">+ speed</button>
-      
-
+        <button class="comprar2" onclick="comprar2()">+ speed</button>
         <img src="IMG/12.png" alt="" class="imagem" id="img1">
         <img src="IMG/22.png" alt="" class="imagem display-none" id="img2">
-      
     </div>
-
     <script>
         let cristal = 0
         let cristal2 = 0
         let custo1 = 1
         let custo2 = 2
-
-        document.getElementById('cristal').textContent = "Cristais: " + cristal
-        document.getElementById('custo1').textContent = "Custo: " + custo1
-        document.getElementById('custo2').textContent = "Custo: " + custo2
-
-        function comprar1(){
-            if (cristal >= custo1){
+        let itemSPEED = 0
+        let speed = (1000 - (itemSPEED * 100))
+        function formatarValor(valor) {
+            if (valor >= 1000000) {
+                return (valor / 1000000).toFixed(1) + 'M';
+            } else if (valor >= 1000) {
+                return (valor / 1000).toFixed(1) + 'K';
+            } else {
+                return valor;
+            }
+        }
+        document.getElementById('cristal').textContent = "Cristais: " + formatarValor(cristal)
+        document.getElementById('custo1').textContent = "Custo: " + formatarValor(custo1)
+        document.getElementById('custo2').textContent = "Custo: " + formatarValor(custo2)
+        function comprar1() {
+            if (cristal >= custo1) {
                 cristal -= custo1
                 cristal2++
                 custo1 *= 1.5
                 custo1 = Math.round(custo1)
-                document.getElementById('cristal').textContent = "Cristais: " + cristal
-                document.getElementById('custo1').textContent = "Custo: " + custo1
+                document.getElementById('cristal').textContent = "Cristais: " + formatarValor(cristal)
+                document.getElementById('custo1').textContent = "Custo: " + formatarValor(custo1)
             }
         }
-
+        function comprar2() {
+            if (cristal >= custo2) {
+                cristal -= custo2
+                itemSPEED++
+                custo2 *= 3
+                custo2 = Math.round(custo2)
+                document.getElementById('cristal').textContent = "Cristais: " + formatarValor(cristal)
+                document.getElementById('custo2').textContent = "Custo: " + formatarValor(custo2)
+            }
+        }
         function mudarCSS() {
             const img2 = document.getElementById('img2')
 
@@ -61,19 +64,16 @@
             } else {
                 img2.style.display = 'none'
                 cristal += 1 + cristal2
-                document.getElementById('cristal').textContent = "Cristais: " + cristal
+                document.getElementById('cristal').textContent = "Cristais: " + formatarValor(cristal)
             }
-
-            document.getElementById('cristal').textContent = "Cristais: " + cristal
-            document.getElementById('custo1').textContent = "Custo: " + custo1
+            document.getElementById('cristal').textContent = "Cristais: " + formatarValor(cristal)
+            document.getElementById('custo1').textContent = "Custo: " + formatarValor(custo1)
         }
-
         function animacao() {
             mudarCSS()
-            setTimeout(animacao, 700)
+            setTimeout(animacao, speed = (1000 - (itemSPEED * 100)))
         }
-        setTimeout(animacao, 700)
+        setTimeout(animacao, speed = (1000 - (itemSPEED * 100)))
     </script>
 </body>
-
 </html>
