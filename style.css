@@ -3,12 +3,12 @@ body {
     color: white;
 }
 
-button{
+button {
     cursor: pointer;
     border: none;
 }
 
-.game-fundo{
+.game-fundo {
     background-color: rgb(0, 0, 0);
     width: 90%;
     height: 95%;
@@ -18,7 +18,7 @@ button{
     top: 50%;
     border-radius: 2.5%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .imagem {
@@ -34,41 +34,59 @@ button{
     display: none;
 }
 
-.minerar{
+.minerar {
     background-color: rgb(255, 255, 255);
     width: 30%;
     height: 20%;
- 
     position: absolute;
     left: 65%;
     top: 73.75%;
-    z-index: 1;
+    font-size: 2em;
 }
 
-.comprar2{
+.comprar1 {
     background-color: rgb(255, 255, 255);
     width: 15%;
     height: 10%;
- 
     position: absolute;
     left: 5%;
     top: 85%;
-    z-index: 1;
-
+    font-size: 1.3em;
 }
 
-.comprar3{
+.comprar2 {
     background-color: rgb(255, 255, 255);
     width: 15%;
     height: 10%;
- 
     position: absolute;
     left: 5%;
     top: 72.5%;
-    z-index: 1;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-.cristal{
+.cristal {
     font-size: 2em;
     background-color: rgb(0, 0, 0);
+}
+
+.custo1 {
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 10%;
+    position: absolute;
+    left: 5%;
+    top: 85%;
+    font-size: 1.3em;
+}
+
+.custo2 {   
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 10%;
+    position: absolute;
+    left: 5%;
+    top: 72.5%;
+    font-size: 1.3em;
+    text-align: center;
 }
