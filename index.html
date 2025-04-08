@@ -12,14 +12,19 @@
 <body>
 
     <div class="game-fundo">
-        <button class="comprar1"></button>
-        <button class="comprar2"></button>
-        <button class="comprar3"></button>
+        <span class="cristal" id="cristal">0</span>
+        <button class="minerar" onclick="mudarCSS()">Minerar</button>
+        <button class="comprar2">cristal +1</button>
+        <button class="comprar3">+ speed</button>
         <img src="IMG/12.png" alt="" class="imagem" id="img1">
         <img src="IMG/22.png" alt="" class="imagem display-none" id="img2">
     </div>
 
     <script>
+        let cristal = 0
+
+        document.getElementById('cristal').textContent = "Cristais: " + cristal
+
         function mudarCSS() {
             const img2 = document.getElementById('img2')
 
@@ -27,8 +32,10 @@
                 img2.style.display = 'block'
             } else {
                 img2.style.display = 'none'
+                cristal += 1
             }
 
+            document.getElementById('cristal').textContent = "Cristais: " + cristal
         }
 
         function animacao() {

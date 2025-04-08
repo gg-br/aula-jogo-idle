@@ -17,6 +17,8 @@ button{
     left: 50%;
     top: 50%;
     border-radius: 2.5%;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .imagem {
@@ -32,7 +34,7 @@ button{
     display: none;
 }
 
-.comprar1{
+.minerar{
     background-color: rgb(255, 255, 255);
     width: 30%;
     height: 20%;
@@ -52,6 +54,7 @@ button{
     left: 5%;
     top: 85%;
     z-index: 1;
+
 }
 
 .comprar3{
@@ -63,4 +66,9 @@ button{
     left: 5%;
     top: 72.5%;
     z-index: 1;
+}
+
+.cristal{
+    font-size: 2em;
+    background-color: rgb(0, 0, 0);
 }
