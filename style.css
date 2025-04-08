@@ -3,9 +3,16 @@ body {
     color: white;
 }
 
-button {
+button{
     cursor: pointer;
     border: none;
+}
+
+span{
+    display: flex;
+    align-items: center;   
+    margin: 0;
+    padding: 0;
 }
 
 .game-fundo {
@@ -50,8 +57,9 @@ button {
     height: 10%;
     position: absolute;
     left: 5%;
-    top: 85%;
+    top: 72.5%;
     font-size: 1.3em;
+    text-align: center;
 }
 
 .comprar2 {
@@ -60,33 +68,35 @@ button {
     height: 10%;
     position: absolute;
     left: 5%;
-    top: 72.5%;
+    top: 85%;
     font-size: 1.3em;
-    text-align: center;
+   
+}
+
+.custo1 {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 20%;
+    top: 72.5%;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+.custo2 {   
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 20%;
+    top: 85%;
+    font-size: 1em;
+    margin-left: 5px;
 }
 
 .cristal {
     font-size: 2em;
     background-color: rgb(0, 0, 0);
-}
-
-.custo1 {
-    background-color: rgb(255, 255, 255);
-    width: 15%;
-    height: 10%;
-    position: absolute;
-    left: 5%;
-    top: 85%;
-    font-size: 1.3em;
-}
-
-.custo2 {   
-    background-color: rgb(255, 255, 255);
-    width: 15%;
-    height: 10%;
-    position: absolute;
-    left: 5%;
-    top: 72.5%;
-    font-size: 1.3em;
-    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
 }

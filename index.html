@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        
+    </style>
 </head>
 
 <body>
 
     <div class="game-fundo">
-     
+
+        <span class="custo1" id="custo1">0</span>
+        <span class="custo2" id="custo2">0</span>
+
         <span class="cristal" id="cristal">0</span>
+
         <button class="minerar" onclick="mudarCSS()">Minerar</button>
-        <button class="comprar1">cristal +1</button>
+
+        <button class="comprar1" onclick="comprar1()">cristal +1</button>
+
         <button class="comprar2">+ speed</button>
+      
+
         <img src="IMG/12.png" alt="" class="imagem" id="img1">
         <img src="IMG/22.png" alt="" class="imagem display-none" id="img2">
       
@@ -24,8 +34,24 @@
 
     <script>
         let cristal = 0
+        let cristal2 = 0
+        let custo1 = 1
+        let custo2 = 2
 
         document.getElementById('cristal').textContent = "Cristais: " + cristal
+        document.getElementById('custo1').textContent = "Custo: " + custo1
+        document.getElementById('custo2').textContent = "Custo: " + custo2
+
+        function comprar1(){
+            if (cristal >= custo1){
+                cristal -= custo1
+                cristal2++
+                custo1 *= 1.5
+                custo1 = Math.round(custo1)
+                document.getElementById('cristal').textContent = "Cristais: " + cristal
+                document.getElementById('custo1').textContent = "Custo: " + custo1
+            }
+        }
 
         function mudarCSS() {
             const img2 = document.getElementById('img2')
@@ -34,10 +60,12 @@
                 img2.style.display = 'block'
             } else {
                 img2.style.display = 'none'
-                cristal += 1
+                cristal += 1 + cristal2
+                document.getElementById('cristal').textContent = "Cristais: " + cristal
             }
 
             document.getElementById('cristal').textContent = "Cristais: " + cristal
+            document.getElementById('custo1').textContent = "Custo: " + custo1
         }
 
         function animacao() {
