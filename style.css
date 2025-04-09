@@ -42,7 +42,8 @@ span{
 }
 
 .minerar {
-    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    background-color: rgb(156, 156, 156);
     width: 30%;
     height: 20%;
     position: absolute;
@@ -52,7 +53,8 @@ span{
 }
 
 .comprar1 {
-    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    background-color: rgb(218, 212, 123);
     width: 15%;
     height: 10%;
     position: absolute;
@@ -63,7 +65,8 @@ span{
 }
 
 .comprar2 {
-    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    background-color: rgb(210, 123, 218);
     width: 15%;
     height: 10%;
     position: absolute;
@@ -94,7 +97,7 @@ span{
 }
 
 .cristal {
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center; 
