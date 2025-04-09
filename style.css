@@ -58,7 +58,7 @@ span{
 
 .comprar1 {
     border: 1px solid #3d3d3d;
-    background-color: rgb(218, 212, 123);
+    background-color: rgb(123, 180, 218);
     width: 30%;
     height: 10%;
     position: absolute;
@@ -72,7 +72,7 @@ span{
 
 .comprar2 {
     border: 1px solid #3d3d3d;
-    background-color: rgb(210, 123, 218);
+    background-color: rgb(123, 218, 136);
     width: 30%;
     height: 10%;
     position: absolute;
