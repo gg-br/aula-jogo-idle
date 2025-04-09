@@ -48,7 +48,7 @@ span{
     position: absolute;
     left: 65%;
     top: 73.75%;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .comprar1 {
@@ -74,7 +74,7 @@ span{
 }
 
 .custo1 {
-    width: 20%;
+    width: 30%;
     height: 10%;
     position: absolute;
     left: 20%;
@@ -84,7 +84,7 @@ span{
 }
 
 .custo2 {   
-    width: 20%;
+    width: 30%;
     height: 10%;
     position: absolute;
     left: 20%;
