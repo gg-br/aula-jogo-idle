@@ -6,6 +6,7 @@ button{
     cursor: pointer;
     border: none;
     transition: all 0.1s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button:active {
@@ -30,7 +31,7 @@ span{
     top: 50%;
     border-radius: 2.5%;
     text-align: center;
-    padding-top: 7.5px;
+    padding-top: 10px;
     box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.4),         
     inset -5px -5px 10px #b9b9b9,          
