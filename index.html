@@ -8,8 +8,12 @@
 </head>
 <body>
     <div class="game-fundo">
-        <span class="custo1" id="custo1">0</span>
-        <span class="custo2" id="custo2">0</span>
+
+    
+        <span class="custo1 display-none" id="custo1">0</span>
+        <span class="custo2 display-none" id="custo2">0</span>
+  
+    
         <span class="cristal" id="cristal">0</span>
         <button class="minerar" onclick="mudarCSS()">Minerar</button>
         <button class="comprar1" onclick="comprar1()">cristal +1</button>
@@ -71,9 +75,9 @@
         }
         function animacao() {
             mudarCSS()
-            setTimeout(animacao, speed = (1000 - (itemSPEED * 100)))
+            setTimeout(animacao, speed = (500 - (itemSPEED * 50)))
         }
-        setTimeout(animacao, speed = (1000 - (itemSPEED * 100)))
+        setTimeout(animacao, speed = (500 - (itemSPEED * 50)))
     </script>
 </body>
 </html>

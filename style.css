@@ -40,7 +40,7 @@ span{
     box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.4),         
     inset -5px -5px 10px #b9b9b9,          
-    inset 5px 5px 10px #6e6e6e;   
+    inset 5px 5px 10px #b9b9b9;   
 }
 
 .imagem {
@@ -50,7 +50,7 @@ span{
     transform: translate(-50%, -50%);
     left: 50%;
     top: 37.5%;
-    border: 3px solid #000000;
+    border: 1px solid #b6b6b6;
 }
 
 .display-none {
