@@ -30,7 +30,12 @@ span{
     top: 50%;
     border-radius: 2.5%;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 7.5px;
+
+    box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.4),         
+    inset -5px -5px 10px #b9b9b9,          
+    inset 5px 5px 10px #6e6e6e;   
 }
 
 .imagem {
@@ -40,6 +45,8 @@ span{
     transform: translate(-50%, -50%);
     left: 50%;
     top: 37.5%;
+
+    border: 1px solid #000000;
 }
 
 .display-none {
@@ -47,6 +54,7 @@ span{
 }
 
 .minerar {
+    font-weight: bolder;
     border: 0px solid #3d3d3d;
     background: linear-gradient(145deg, #8f8f8f, #818181a9); 
     width: 30%;
@@ -60,6 +68,7 @@ span{
 }
 
 .comprar1 {
+    font-weight: bolder;
     background: linear-gradient(145deg, #8f8f8f, #818181a9); 
     border: 0px solid #3d3d3d;
     width: 30%;
@@ -74,6 +83,7 @@ span{
 }
 
 .comprar2 {
+    font-weight: bolder;
     border: 0px solid #3d3d3d;
     background: linear-gradient(145deg, #8f8f8f, #818181a9); 
     width: 30%;
@@ -87,6 +97,7 @@ span{
 }
 
 .custo1 {
+    font-weight: bolder;
     width: 30%;
     height: 10%;
     position: absolute;
@@ -96,7 +107,8 @@ span{
     margin-left: 5px;
 }
 
-.custo2 {   
+.custo2 {
+    font-weight: bolder;   
     width: 30%;
     height: 10%;
     position: absolute;
@@ -107,6 +119,7 @@ span{
 }
 
 .cristal {
+    font-weight: bolder;
     font-size: 1.5em;
     display: flex;
     justify-content: center; 
