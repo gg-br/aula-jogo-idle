@@ -48,7 +48,7 @@ span{
 
 .minerar {
     border: 0px solid #3d3d3d;
-    background: linear-gradient(90deg, #7d7d7d, #818181a9); 
+    background: linear-gradient(145deg, #8f8f8f, #818181a9); 
     width: 30%;
     height: 20%;
     position: absolute;
@@ -60,7 +60,7 @@ span{
 }
 
 .comprar1 {
-    background: linear-gradient(90deg, #7d7d7d, #818181a9); 
+    background: linear-gradient(145deg, #8f8f8f, #818181a9); 
     border: 0px solid #3d3d3d;
     width: 30%;
     height: 10%;
@@ -75,7 +75,7 @@ span{
 
 .comprar2 {
     border: 0px solid #3d3d3d;
-    background: linear-gradient(90deg, #7d7d7d, #818181a9); 
+    background: linear-gradient(145deg, #8f8f8f, #818181a9); 
     width: 30%;
     height: 10%;
     position: absolute;
